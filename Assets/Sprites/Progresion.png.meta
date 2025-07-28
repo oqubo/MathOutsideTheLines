@@ -1,55 +1,49 @@
 fileFormatVersion: 2
-guid: b369f0449f40a4cbe9dec1c88adedd1f
+guid: cd5593fee3f9f4cd88a88ffd833e26e9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6933502581219436949
-    second: Planetas_0
+      213: 2643036555025371624
+    second: Progresion_0
   - first:
-      213: -9181772123159090412
-    second: Planetas_1
+      213: -667550523428652866
+    second: Progresion_1
   - first:
-      213: 4831738590538752591
-    second: Planetas_2
+      213: -195682814335246659
+    second: Progresion_2
   - first:
-      213: 8228473650305195019
-    second: Planetas_3
+      213: -6594299850878775148
+    second: Progresion_3
   - first:
-      213: 5215539951979972166
-    second: Planetas_4
+      213: -3723936480725752328
+    second: Progresion_4
   - first:
-      213: 1529275474537781392
-    second: Planetas_5
+      213: 2304644952982431895
+    second: Progresion_5
   - first:
-      213: -2192022562841302822
-    second: Planetas_6
+      213: -5006980154306632878
+    second: Progresion_6
   - first:
-      213: -2365116803971936000
-    second: Planetas_7
+      213: -4127688803769845260
+    second: Progresion_7
   - first:
-      213: -4714300434741529709
-    second: Planetas_8
+      213: 8812415989727045781
+    second: Progresion_8
   - first:
-      213: 1135368787441794580
-    second: Planetas_9
+      213: 4771227628390847645
+    second: Progresion_9
   - first:
-      213: 1317061171311385747
-    second: Planetas_10
+      213: 6535842074926077944
+    second: Progresion_10
   - first:
-      213: -3352463550519217230
-    second: Planetas_11
+      213: -4660814502919571072
+    second: Progresion_11
   - first:
-      213: 5677619097848003369
-    second: Planetas_12
+      213: 3608791641744332538
+    second: Progresion_12
   - first:
-      213: -8322208668595455409
-    second: Planetas_13
-  - first:
-      213: -3772743769729747492
-    second: Planetas_14
-  - first:
-      213: -2622725869442962787
-    second: Planetas_15
+      213: -8860603439874834674
+    second: Progresion_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,7 +90,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -158,221 +152,309 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Planetas_10
+      name: Progresion_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 525
-        width: 369
-        height: 383
+        x: 3552
+        y: 3844
+        width: 76
+        height: 82
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b66592d332047cf90800000000000000
-      internalID: -6933502581219436949
+      spriteID: 8e1d8ae4eb3fda420800000000000000
+      internalID: 2643036555025371624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_9
+      name: Progresion_1
       rect:
         serializedVersion: 2
-        x: 463
-        y: 585
-        width: 308
-        height: 340
+        x: 2646
+        y: 3692
+        width: 70
+        height: 69
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41ba48ea6eac39080800000000000000
-      internalID: -9181772123159090412
+      spriteID: eb8b865f5526cb6f0800000000000000
+      internalID: -667550523428652866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_8
+      name: Progresion_2
       rect:
         serializedVersion: 2
-        x: 870
-        y: 597
-        width: 279
-        height: 289
+        x: 4212
+        y: 3603
+        width: 72
+        height: 70
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f42eb9006a8cd0340800000000000000
-      internalID: 4831738590538752591
+      spriteID: dbe16e2648bc84df0800000000000000
+      internalID: -195682814335246659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_7
+      name: Progresion_3
       rect:
         serializedVersion: 2
-        x: 1287
-        y: 598
-        width: 310
-        height: 315
-      alignment: 9
-      pivot: {x: 0.45969042, y: 0.3942133}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 646cf9504f1516840800000000000000
-      internalID: 5215539951979972166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Planetas_6
-      rect:
-        serializedVersion: 2
-        x: 1689
-        y: 591
-        width: 245
-        height: 241
+        x: 2025
+        y: 3259
+        width: 63
+        height: 63
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad8e33ac71f5491e0800000000000000
-      internalID: -2192022562841302822
+      spriteID: 49095f549375c74a0800000000000000
+      internalID: -6594299850878775148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_5
+      name: Progresion_4
       rect:
         serializedVersion: 2
-        x: 96
-        y: 157
-        width: 217
-        height: 201
+        x: 4800
+        y: 3098
+        width: 79
+        height: 72
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 39c997f3824274210800000000000000
-      internalID: 1317061171311385747
+      spriteID: 8f52934408be15cc0800000000000000
+      internalID: -3723936480725752328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_4
+      name: Progresion_5
       rect:
         serializedVersion: 2
-        x: 446
-        y: 132
-        width: 282
-        height: 243
-      alignment: 9
-      pivot: {x: 0.6255521, y: 0.41429296}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b37bd4b928a971d0800000000000000
-      internalID: -3352463550519217230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Planetas_3
-      rect:
-        serializedVersion: 2
-        x: 909
-        y: 113
-        width: 220
-        height: 246
+        x: 1669
+        y: 2555
+        width: 71
+        height: 81
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 92b3439fc74face40800000000000000
-      internalID: 5677619097848003369
+      spriteID: 7982aebcf5ebbff10800000000000000
+      internalID: 2304644952982431895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_2
+      name: Progresion_6
       rect:
         serializedVersion: 2
-        x: 1332
-        y: 187
-        width: 186
-        height: 168
+        x: 5052
+        y: 2256
+        width: 73
+        height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4af0b11f43918c80800000000000000
-      internalID: -8322208668595455409
+      spriteID: 2536f19e312a38ab0800000000000000
+      internalID: -5006980154306632878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_1
+      name: Progresion_7
       rect:
         serializedVersion: 2
-        x: 1755
-        y: 196
-        width: 112
-        height: 117
+        x: 1651
+        y: 1783
+        width: 74
+        height: 76
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd5b0b0c78584abc0800000000000000
-      internalID: -3772743769729747492
+      spriteID: 4f9f0f307e087b6c0800000000000000
+      internalID: -4127688803769845260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Progresion_8
+      rect:
+        serializedVersion: 2
+        x: 5005
+        y: 1690
+        width: 80
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59827a807adfb4a70800000000000000
+      internalID: 8812415989727045781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Progresion_9
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 1046
+        width: 72
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9414ccbf3ec63240800000000000000
+      internalID: 4771227628390847645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Progresion_10
+      rect:
+        serializedVersion: 2
+        x: 4734
+        y: 1078
+        width: 67
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f755002db9f3ba50800000000000000
+      internalID: 6535842074926077944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Progresion_11
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 495
+        width: 74
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0897d7557e5715fb0800000000000000
+      internalID: -4660814502919571072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Progresion_12
+      rect:
+        serializedVersion: 2
+        x: 4194
+        y: 554
+        width: 75
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6d192c0e0051230800000000000000
+      internalID: 3608791641744332538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Progresion_13
+      rect:
+        serializedVersion: 2
+        x: 3324
+        y: 313
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0ff7aeed10d80580800000000000000
+      internalID: -8860603439874834674
       vertices: []
       indices: 
       edges: []
@@ -381,7 +463,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 69daaf1071da94715a449248bfc12734
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -391,15 +473,20 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Planetas_1: -3772743769729747492
-      Planetas_10: -6933502581219436949
-      Planetas_2: -8322208668595455409
-      Planetas_3: 5677619097848003369
-      Planetas_4: -3352463550519217230
-      Planetas_5: 1317061171311385747
-      Planetas_7: 5215539951979972166
-      Planetas_8: 4831738590538752591
-      Planetas_9: -9181772123159090412
+      Progresion_0: 2643036555025371624
+      Progresion_1: -667550523428652866
+      Progresion_10: 6535842074926077944
+      Progresion_11: -4660814502919571072
+      Progresion_12: 3608791641744332538
+      Progresion_13: -8860603439874834674
+      Progresion_2: -195682814335246659
+      Progresion_3: -6594299850878775148
+      Progresion_4: -3723936480725752328
+      Progresion_5: 2304644952982431895
+      Progresion_6: -5006980154306632878
+      Progresion_7: -4127688803769845260
+      Progresion_8: 8812415989727045781
+      Progresion_9: 4771227628390847645
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

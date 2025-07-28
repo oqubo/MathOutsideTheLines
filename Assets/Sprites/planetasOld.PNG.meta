@@ -1,55 +1,124 @@
 fileFormatVersion: 2
-guid: b369f0449f40a4cbe9dec1c88adedd1f
+guid: dbab0117ac76b4ae9b437f62417eafce
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6933502581219436949
-    second: Planetas_0
+      213: -7969909728831317859
+    second: planetas_0
   - first:
-      213: -9181772123159090412
-    second: Planetas_1
+      213: -5048305614486487270
+    second: planetas_1
   - first:
-      213: 4831738590538752591
-    second: Planetas_2
+      213: 6542205692387176553
+    second: planetas_2
   - first:
-      213: 8228473650305195019
-    second: Planetas_3
+      213: 31964767887695495
+    second: planetas_3
   - first:
-      213: 5215539951979972166
-    second: Planetas_4
+      213: -8268541130945840638
+    second: planetas_4
   - first:
-      213: 1529275474537781392
-    second: Planetas_5
+      213: -4096412085795113499
+    second: planetas_5
   - first:
-      213: -2192022562841302822
-    second: Planetas_6
+      213: 442771260852349703
+    second: planetas_6
   - first:
-      213: -2365116803971936000
-    second: Planetas_7
+      213: 5643046057089241279
+    second: planetas_7
   - first:
-      213: -4714300434741529709
-    second: Planetas_8
+      213: -5039525488252224246
+    second: planetas_8
   - first:
-      213: 1135368787441794580
-    second: Planetas_9
+      213: -5005677029109560212
+    second: planetas_9
   - first:
-      213: 1317061171311385747
-    second: Planetas_10
+      213: 7852629079517621824
+    second: planetas_10
   - first:
-      213: -3352463550519217230
-    second: Planetas_11
+      213: -2436906397770703397
+    second: planetas_11
   - first:
-      213: 5677619097848003369
-    second: Planetas_12
+      213: 4532064871132401593
+    second: planetas_12
   - first:
-      213: -8322208668595455409
-    second: Planetas_13
+      213: 3744053970559283037
+    second: planetas_13
   - first:
-      213: -3772743769729747492
-    second: Planetas_14
+      213: -3544450444236203923
+    second: planetas_14
   - first:
-      213: -2622725869442962787
-    second: Planetas_15
+      213: 5769809986091199467
+    second: planetas_15
+  - first:
+      213: -7545004016943639308
+    second: planetas_16
+  - first:
+      213: 2304402149577761438
+    second: planetas_17
+  - first:
+      213: 6395620849880371893
+    second: planetas_18
+  - first:
+      213: 8224544772151547960
+    second: planetas_19
+  - first:
+      213: 7082352715744914860
+    second: planetas_20
+  - first:
+      213: -3086643864415186698
+    second: planetas_21
+  - first:
+      213: 4341636974280328421
+    second: planetas_22
+  - first:
+      213: 7838453870282616060
+    second: planetas_23
+  - first:
+      213: 63055687304432572
+    second: planetas_24
+  - first:
+      213: 2913594213989053107
+    second: planetas_25
+  - first:
+      213: 3113578464073684563
+    second: planetas_26
+  - first:
+      213: 5641621062638213394
+    second: planetas_27
+  - first:
+      213: 2518860798511208725
+    second: planetas_28
+  - first:
+      213: 6039039396480772033
+    second: planetas_29
+  - first:
+      213: 520702451924418096
+    second: planetas_30
+  - first:
+      213: -2391302293058014904
+    second: planetas_31
+  - first:
+      213: -5134826496820522562
+    second: planetas_32
+  - first:
+      213: -840489013497214324
+    second: planetas_33
+  - first:
+      213: -6533043681976134347
+    second: planetas_34
+  - first:
+      213: 7466198713935105296
+    second: planetas_35
+  - first:
+      213: -1802744992707567773
+    second: planetas_36
+  - first:
+      213: -2903862400955686139
+    second: planetas_37
+  - first:
+      213: -1238399472816262004
+    second: planetas_38
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -158,7 +227,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Planetas_10
+      name: planeta_10
       rect:
         serializedVersion: 2
         x: 28
@@ -173,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b66592d332047cf90800000000000000
-      internalID: -6933502581219436949
+      spriteID: d985419f351356190800000000000000
+      internalID: -7969909728831317859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_9
+      name: planeta_9
       rect:
         serializedVersion: 2
         x: 463
@@ -195,64 +264,64 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41ba48ea6eac39080800000000000000
-      internalID: -9181772123159090412
+      spriteID: a1f3cea6ac0d0f9b0800000000000000
+      internalID: -5048305614486487270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_8
+      name: planeta_8
       rect:
         serializedVersion: 2
-        x: 870
-        y: 597
-        width: 279
-        height: 289
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 862
+        y: 575
+        width: 312
+        height: 309
+      alignment: 9
+      pivot: {x: 0.540052, y: 0.44607967}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f42eb9006a8cd0340800000000000000
-      internalID: 4831738590538752591
+      spriteID: 5e5b09469ee9627c0800000000000000
+      internalID: -4096412085795113499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_7
+      name: planeta_7
       rect:
         serializedVersion: 2
         x: 1287
         y: 598
         width: 310
-        height: 315
+        height: 313
       alignment: 9
-      pivot: {x: 0.45969042, y: 0.3942133}
+      pivot: {x: 0.44625363, y: 0.40684515}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 646cf9504f1516840800000000000000
-      internalID: 5215539951979972166
+      spriteID: a0df23cd442001ab0800000000000000
+      internalID: -5039525488252224246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_6
+      name: planeta_6
       rect:
         serializedVersion: 2
         x: 1689
-        y: 591
-        width: 245
-        height: 241
+        y: 593
+        width: 247
+        height: 239
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,36 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad8e33ac71f5491e0800000000000000
-      internalID: -2192022562841302822
+      spriteID: c6c87936343488ab0800000000000000
+      internalID: -5005677029109560212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_5
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 157
-        width: 217
-        height: 201
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 39c997f3824274210800000000000000
-      internalID: 1317061171311385747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Planetas_4
+      name: planeta_4
       rect:
         serializedVersion: 2
         x: 446
@@ -298,27 +345,27 @@ TextureImporter:
         width: 282
         height: 243
       alignment: 9
-      pivot: {x: 0.6255521, y: 0.41429296}
+      pivot: {x: 0.6107812, y: 0.40572223}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b37bd4b928a971d0800000000000000
-      internalID: -3352463550519217230
+      spriteID: 5b2933b074fc1c850800000000000000
+      internalID: 6395620849880371893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_3
+      name: planeta_3
       rect:
         serializedVersion: 2
-        x: 909
-        y: 113
-        width: 220
-        height: 246
+        x: 878
+        y: 90
+        width: 294
+        height: 306
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -327,14 +374,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 92b3439fc74face40800000000000000
-      internalID: 5677619097848003369
+      spriteID: 838936f05e3732270800000000000000
+      internalID: 8224544772151547960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_2
+      name: planeta_5
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 132
+        width: 260
+        height: 261
+      alignment: 9
+      pivot: {x: 0.45994854, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f0d46152c90a25d0800000000000000
+      internalID: -3086643864415186698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta_2
       rect:
         serializedVersion: 2
         x: 1332
@@ -349,20 +418,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4af0b11f43918c80800000000000000
-      internalID: -8322208668595455409
+      spriteID: cbb49d240d400e000800000000000000
+      internalID: 63055687304432572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_1
+      name: planeta_1
       rect:
         serializedVersion: 2
-        x: 1755
-        y: 196
-        width: 112
-        height: 117
+        x: 1707
+        y: 149
+        width: 229
+        height: 227
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -371,8 +440,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd5b0b0c78584abc0800000000000000
-      internalID: -3772743769729747492
+      spriteID: 519daedfc8ac4f220800000000000000
+      internalID: 2518860798511208725
       vertices: []
       indices: 
       edges: []
@@ -381,7 +450,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 69daaf1071da94715a449248bfc12734
+    spriteID: 0de41a35a10e142448ccd5e8868c51f9
     internalID: 0
     vertices: []
     indices: 
@@ -391,15 +460,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Planetas_1: -3772743769729747492
-      Planetas_10: -6933502581219436949
-      Planetas_2: -8322208668595455409
-      Planetas_3: 5677619097848003369
-      Planetas_4: -3352463550519217230
-      Planetas_5: 1317061171311385747
-      Planetas_7: 5215539951979972166
-      Planetas_8: 4831738590538752591
-      Planetas_9: -9181772123159090412
+      planeta_1: 2518860798511208725
+      planeta_10: -7969909728831317859
+      planeta_2: 63055687304432572
+      planeta_3: 8224544772151547960
+      planeta_4: 6395620849880371893
+      planeta_5: -3086643864415186698
+      planeta_6: -5005677029109560212
+      planeta_7: -5039525488252224246
+      planeta_8: -4096412085795113499
+      planeta_9: -5048305614486487270
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

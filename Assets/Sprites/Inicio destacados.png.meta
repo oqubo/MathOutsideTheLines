@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 9d34a3263dead4da391c0e08289c495f
+guid: 37c76f94a94ae4647aa48f7209d40c82
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3686888737945642462
-    second: icono_0
+      213: 7970358719628994611
+    second: Inicio destacados_0
+  - first:
+      213: 536364848785350325
+    second: Inicio destacados_1
+  - first:
+      213: 3216821268795216164
+    second: Inicio destacados_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icono_0
+      name: Inicio destacados_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2048
-        height: 2048
+        x: 2802
+        y: 3384
+        width: 647
+        height: 169
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed563afe5c57a2330800000000000000
-      internalID: 3686888737945642462
+      spriteID: 3386ce7d6076c9e60800000000000000
+      internalID: 7970358719628994611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inicio destacados_1
+      rect:
+        serializedVersion: 2
+        x: 3866
+        y: 2372
+        width: 825
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be5bd9fcfc817700800000000000000
+      internalID: 536364848785350325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inicio destacados_2
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1812
+        width: 515
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 421d57886e174ac20800000000000000
+      internalID: 3216821268795216164
       vertices: []
       indices: 
       edges: []
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      icono_0: 3686888737945642462
+      Inicio destacados_0: 7970358719628994611
+      Inicio destacados_1: 536364848785350325
+      Inicio destacados_2: 3216821268795216164
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

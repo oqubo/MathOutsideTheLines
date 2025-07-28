@@ -164,7 +164,7 @@ public class GameManager : MonoBehaviour
     public void ReiniciarNivel()
     {
         RecolocarNave();
-        valorActual = 1;
+        valorActual = 0;
         LimpiarEstelas();
         ActualizarUI();
     }

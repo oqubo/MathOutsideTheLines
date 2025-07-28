@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.UI;
 
 public class NaveController : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class NaveController : MonoBehaviour
     [SerializeField] private GameObject symbolPrefab;
 
     [SerializeField] private Vector3 posicionInicial = new Vector3(1.6f, -4.5f, 0); 
+    
+    [SerializeField] private Sprite imgSuma, imgResta, imgMultiplicacion, imgDivision;
+    [SerializeField] private Image decoracionImage; 
     
     private bool isBusy = false;
 
@@ -50,24 +54,28 @@ public class NaveController : MonoBehaviour
     public void SetSuma()
     {
         currentOperation = Operation.Add;
+        if (decoracionImage != null) decoracionImage.sprite = imgSuma;
         PaintOperationLabel();
     }
     
     public void SetResta()
     {
         currentOperation = Operation.Subtract;
+        if (decoracionImage != null) decoracionImage.sprite = imgResta;
         PaintOperationLabel();
     }
     
     public void SetMultiplicacion()
     {
         currentOperation = Operation.Multiply;
+        if (decoracionImage != null) decoracionImage.sprite = imgMultiplicacion;
         PaintOperationLabel();
     }
     
     public void SetDivision()
     {
         currentOperation = Operation.Divide;
+        if (decoracionImage != null) decoracionImage.sprite = imgDivision;
         PaintOperationLabel();
     }
     

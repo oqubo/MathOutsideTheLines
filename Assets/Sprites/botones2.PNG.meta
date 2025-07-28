@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 9d34a3263dead4da391c0e08289c495f
+guid: 4aea2cd0c2eef4e29ab95b9043fcc376
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3686888737945642462
-    second: icono_0
+      213: 6237422491205511437
+    second: botones2_0
+  - first:
+      213: 8110979822020740472
+    second: botones2_1
+  - first:
+      213: -86602264867392879
+    second: botones2_2
+  - first:
+      213: 4393446029395231734
+    second: botones2_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icono_0
+      name: botones2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2048
-        height: 2048
+        x: 373
+        y: 2448
+        width: 499
+        height: 580
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed563afe5c57a2330800000000000000
-      internalID: 3686888737945642462
+      spriteID: d09265e55b6cf8650800000000000000
+      internalID: 6237422491205511437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones2_1
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 2493
+        width: 471
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87548ef9c2dff8070800000000000000
+      internalID: 8110979822020740472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones2_2
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1820
+        width: 507
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 192b5dde2b35ccef0800000000000000
+      internalID: -86602264867392879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botones2_3
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 1827
+        width: 473
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f304f1e2e7a8fc30800000000000000
+      internalID: 4393446029395231734
       vertices: []
       indices: 
       edges: []
@@ -148,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      icono_0: 3686888737945642462
+      botones2_0: 6237422491205511437
+      botones2_1: 8110979822020740472
+      botones2_2: -86602264867392879
+      botones2_3: 4393446029395231734
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

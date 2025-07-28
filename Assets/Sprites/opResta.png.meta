@@ -1,55 +1,34 @@
 fileFormatVersion: 2
-guid: b369f0449f40a4cbe9dec1c88adedd1f
+guid: a59463dbbed5f499dbf4b1530f4a3fcb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6933502581219436949
-    second: Planetas_0
+      213: 6662108640786826697
+    second: Resta_0
   - first:
-      213: -9181772123159090412
-    second: Planetas_1
+      213: -1675930764331556879
+    second: Resta_1
   - first:
-      213: 4831738590538752591
-    second: Planetas_2
+      213: 1683129413730935051
+    second: Resta_2
   - first:
-      213: 8228473650305195019
-    second: Planetas_3
+      213: 7683655767425205957
+    second: Resta_3
   - first:
-      213: 5215539951979972166
-    second: Planetas_4
+      213: -2488104459428722749
+    second: Resta_4
   - first:
-      213: 1529275474537781392
-    second: Planetas_5
+      213: -5829741220168958415
+    second: Resta_5
   - first:
-      213: -2192022562841302822
-    second: Planetas_6
+      213: 4236997652927268910
+    second: Resta_6
   - first:
-      213: -2365116803971936000
-    second: Planetas_7
+      213: 627841622054101619
+    second: Resta_7
   - first:
-      213: -4714300434741529709
-    second: Planetas_8
-  - first:
-      213: 1135368787441794580
-    second: Planetas_9
-  - first:
-      213: 1317061171311385747
-    second: Planetas_10
-  - first:
-      213: -3352463550519217230
-    second: Planetas_11
-  - first:
-      213: 5677619097848003369
-    second: Planetas_12
-  - first:
-      213: -8322208668595455409
-    second: Planetas_13
-  - first:
-      213: -3772743769729747492
-    second: Planetas_14
-  - first:
-      213: -2622725869442962787
-    second: Planetas_15
+      213: -2232525922463291969
+    second: Resta_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -91,12 +70,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -158,221 +137,199 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Planetas_10
+      name: Resta_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 525
-        width: 369
-        height: 383
+        x: 3518
+        y: 3810
+        width: 152
+        height: 144
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b66592d332047cf90800000000000000
-      internalID: -6933502581219436949
+      spriteID: 9c5c82de280947c50800000000000000
+      internalID: 6662108640786826697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_9
+      name: Resta_1
       rect:
         serializedVersion: 2
-        x: 463
-        y: 585
-        width: 308
-        height: 340
+        x: 1797
+        y: 513
+        width: 3134
+        height: 3243
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41ba48ea6eac39080800000000000000
-      internalID: -9181772123159090412
+      spriteID: 1ff5edb69d5edb8e0800000000000000
+      internalID: -1675930764331556879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_8
+      name: Resta_2
       rect:
         serializedVersion: 2
-        x: 870
-        y: 597
-        width: 279
-        height: 289
+        x: 2611
+        y: 3659
+        width: 139
+        height: 136
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f42eb9006a8cd0340800000000000000
-      internalID: 4831738590538752591
+      spriteID: b01a170c84dab5710800000000000000
+      internalID: 1683129413730935051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_7
+      name: Resta_3
       rect:
         serializedVersion: 2
-        x: 1287
-        y: 598
-        width: 310
-        height: 315
-      alignment: 9
-      pivot: {x: 0.45969042, y: 0.3942133}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 646cf9504f1516840800000000000000
-      internalID: 5215539951979972166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Planetas_6
-      rect:
-        serializedVersion: 2
-        x: 1689
-        y: 591
-        width: 245
-        height: 241
+        x: 1646
+        y: 2523
+        width: 130
+        height: 141
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad8e33ac71f5491e0800000000000000
-      internalID: -2192022562841302822
+      spriteID: 5c6c2c1f534d1aa60800000000000000
+      internalID: 7683655767425205957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_5
+      name: Resta_4
       rect:
         serializedVersion: 2
-        x: 96
-        y: 157
-        width: 217
-        height: 201
+        x: 5017
+        y: 2220
+        width: 136
+        height: 139
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 39c997f3824274210800000000000000
-      internalID: 1317061171311385747
+      spriteID: 3c78fab3d2a787dd0800000000000000
+      internalID: -2488104459428722749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_4
+      name: Resta_5
       rect:
         serializedVersion: 2
-        x: 446
-        y: 132
-        width: 282
-        height: 243
-      alignment: 9
-      pivot: {x: 0.6255521, y: 0.41429296}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b37bd4b928a971d0800000000000000
-      internalID: -3352463550519217230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Planetas_3
-      rect:
-        serializedVersion: 2
-        x: 909
-        y: 113
-        width: 220
-        height: 246
+        x: 1616
+        y: 1744
+        width: 145
+        height: 147
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 92b3439fc74face40800000000000000
-      internalID: 5677619097848003369
+      spriteID: 13e706f5f39981fa0800000000000000
+      internalID: -5829741220168958415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_2
+      name: Resta_6
       rect:
         serializedVersion: 2
-        x: 1332
-        y: 187
-        width: 186
-        height: 168
+        x: 4974
+        y: 1660
+        width: 137
+        height: 140
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4af0b11f43918c80800000000000000
-      internalID: -8322208668595455409
+      spriteID: e28c4e0bae6dcca30800000000000000
+      internalID: 4236997652927268910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Planetas_1
+      name: Resta_7
       rect:
         serializedVersion: 2
-        x: 1755
-        y: 196
-        width: 112
-        height: 117
+        x: 2525
+        y: 451
+        width: 131
+        height: 146
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd5b0b0c78584abc0800000000000000
-      internalID: -3772743769729747492
+      spriteID: 3726db9f0aa86b800800000000000000
+      internalID: 627841622054101619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resta_8
+      rect:
+        serializedVersion: 2
+        x: 3297
+        y: 291
+        width: 123
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb569bf70897401e0800000000000000
+      internalID: -2232525922463291969
       vertices: []
       indices: 
       edges: []
@@ -381,7 +338,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 69daaf1071da94715a449248bfc12734
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -391,15 +348,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Planetas_1: -3772743769729747492
-      Planetas_10: -6933502581219436949
-      Planetas_2: -8322208668595455409
-      Planetas_3: 5677619097848003369
-      Planetas_4: -3352463550519217230
-      Planetas_5: 1317061171311385747
-      Planetas_7: 5215539951979972166
-      Planetas_8: 4831738590538752591
-      Planetas_9: -9181772123159090412
+      Resta_0: 6662108640786826697
+      Resta_1: -1675930764331556879
+      Resta_2: 1683129413730935051
+      Resta_3: 7683655767425205957
+      Resta_4: -2488104459428722749
+      Resta_5: -5829741220168958415
+      Resta_6: 4236997652927268910
+      Resta_7: 627841622054101619
+      Resta_8: -2232525922463291969
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
