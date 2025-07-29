@@ -1,5 +1,4 @@
 using UnityEngine;
-using TMPro;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -9,16 +8,20 @@ public class NaveController : MonoBehaviour
     public Operation currentOperation = Operation.Add;
     
     [SerializeField] private float speed = 5f;
-    [SerializeField] private float rotationSpeed = 360f; // grados por segundo
+    [SerializeField] private float rotationSpeed = 360f;
+    
     [SerializeField] private float symbolSpacing = 0.5f;
-
-    [SerializeField] private TextMeshPro operationLabel; // Asignar en Inspector
     [SerializeField] private GameObject symbolPrefab;
 
     [SerializeField] private Vector3 posicionInicial = new Vector3(1.6f, -4.5f, 0); 
     
     [SerializeField] private Sprite imgSuma, imgResta, imgMultiplicacion, imgDivision;
+    [SerializeField] private Sprite imgEstelaSuma, imgEstelaResta, imgEstelaMultiplicacion, imgEstelaDivision, imgEstelaActual;
     [SerializeField] private Image decoracionImage; 
+    
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClipBoton, audioClipLinea;
+
     
     private bool isBusy = false;
 
@@ -26,79 +29,68 @@ public class NaveController : MonoBehaviour
     
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         RecolocarNave();
-        PaintOperationLabel();
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Collider2D hit = Physics2D.OverlapPoint(mousePos);
-            if (hit != null && hit.gameObject == this.gameObject)
-            {
-                CycleOperation();
-            }
-        }
+
     }
 
-    void CycleOperation()
-    {
-        currentOperation = (Operation)(((int)currentOperation + 1) % 4);
-        Debug.Log("Operation: " + currentOperation);
-        
-        PaintOperationLabel();
-    }
 
     public void SetSuma()
     {
+        audioSource.PlayOneShot(audioClipBoton);
         currentOperation = Operation.Add;
         if (decoracionImage != null) decoracionImage.sprite = imgSuma;
-        PaintOperationLabel();
+        imgEstelaActual = imgEstelaSuma;
+        GetComponent<SpriteRenderer>().color = Color.red;
+
     }
     
     public void SetResta()
     {
+        audioSource.PlayOneShot(audioClipBoton);
         currentOperation = Operation.Subtract;
         if (decoracionImage != null) decoracionImage.sprite = imgResta;
-        PaintOperationLabel();
+        imgEstelaActual = imgEstelaResta;
+        GetComponent<SpriteRenderer>().color = Color.yellow;
     }
     
     public void SetMultiplicacion()
     {
+        audioSource.PlayOneShot(audioClipBoton);
         currentOperation = Operation.Multiply;
         if (decoracionImage != null) decoracionImage.sprite = imgMultiplicacion;
-        PaintOperationLabel();
+        imgEstelaActual = imgEstelaMultiplicacion;
+        GetComponent<SpriteRenderer>().color = Color.blue;
     }
     
     public void SetDivision()
     {
+        audioSource.PlayOneShot(audioClipBoton);
         currentOperation = Operation.Divide;
         if (decoracionImage != null) decoracionImage.sprite = imgDivision;
-        PaintOperationLabel();
+        imgEstelaActual = imgEstelaDivision;
+        GetComponent<SpriteRenderer>().color = Color.green;
     }
     
     
     public void RecolocarNave()
     {
         transform.position = posicionInicial;
-        PaintOperationLabel();
+        SetSuma();
     }
-
-    public void PaintOperationLabel()
-    {
-        if (operationLabel != null)
-        {
-            operationLabel.text = GetOperationSymbol();
-            operationLabel.color = GetOperationColor();
-        }
-    }
+    
 
     public void MoveTo(Vector3 destination, int valor)
     {
+
         if (!isBusy)
+        {
             StartCoroutine(RotateAndMove(destination, valor));
+        }
         
         
     }
@@ -106,9 +98,10 @@ public class NaveController : MonoBehaviour
      private IEnumerator RotateAndMove(Vector3 destination, int valor)
     {
         isBusy = true;
+        Vector3 direction = (destination - transform.position).normalized;
 
         // ROTACIÓN
-        Vector3 direction = (destination - transform.position).normalized;
+        /*
         float targetAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
         while (true)
@@ -122,6 +115,7 @@ public class NaveController : MonoBehaviour
 
             yield return null;
         }
+        */
 
         // MOVIMIENTO
         Vector3 lastSymbolPosition = transform.position;
@@ -148,11 +142,7 @@ public class NaveController : MonoBehaviour
     void PlaceSymbol(Vector3 position)
     {
         GameObject symbol = Instantiate(symbolPrefab, position, Quaternion.identity);
-        TextMeshPro tmp = symbol.GetComponent<TextMeshPro>();
-        tmp.text = GetOperationSymbol();
-        tmp.fontSize = 3;
-        tmp.alignment = TextAlignmentOptions.Center;
-        tmp.color = GetOperationColor();
+        symbol.GetComponent<SpriteRenderer>().sprite = imgEstelaActual;
         symbol.transform.up = moveDirection;
     }
 

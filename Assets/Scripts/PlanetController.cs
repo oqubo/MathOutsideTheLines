@@ -8,14 +8,27 @@ public class PlanetController : MonoBehaviour
 {
     [SerializeField] private int valor;
     [SerializeField] private Sprite[] sprites;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClipPlaneta;
+
     private void Start()
     {
-        valor = Random.Range(1, 10);
-        GetComponent<SpriteRenderer>().sprite = sprites[valor];
+        audioSource = GetComponent<AudioSource>();
+        
+    }
+    
+    public void SetValor(int nuevoValor)
+    {
+        valor = nuevoValor;
+        if (sprites != null && sprites.Length > valor)
+        {
+            GetComponent<SpriteRenderer>().sprite = sprites[valor];
+        }
     }
 
     private void OnMouseDown()
     {
+        audioSource.PlayOneShot(audioClipPlaneta);
         NaveController ship = FindObjectOfType<NaveController>();
         if (ship != null)
         {

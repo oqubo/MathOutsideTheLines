@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 
 public class GameManager : MonoBehaviour
@@ -14,6 +15,12 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI txtLevel, txtTarget, txtValue;
         
+    [SerializeField] private GameObject despegueImage;
+    [SerializeField] private Image imgProgreso;
+    
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClipBoton, audioClipWin;
+    
 //------------------------------
 // CREACION
 //------------------------------
@@ -30,7 +37,16 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        ConfigurarFPS();
+        //ConfigurarFPS();
+        
+        despegueImage.SetActive(true);
+        Invoke("OcultarImagen",3f);
+        
+    }
+
+    private void OcultarImagen()
+    {
+        despegueImage.SetActive(false);
     }
 
 
@@ -52,10 +68,12 @@ public class GameManager : MonoBehaviour
 //------------------------------
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        
         nivel = 1;
         puntos = 0;
         valorObjetivoMin = 10;
-        planetasMin = 2;
+        planetasMin = 1;
         valorActual = 0;
         valorObjetivoActual = 0;
         planetasActual = 0;
@@ -65,34 +83,30 @@ public class GameManager : MonoBehaviour
 
     private void CrearNivel()
     {
-        // Lógica para crear un nuevo nivel
-
-        valorObjetivoActual = Random.Range(
-            valorObjetivoMin, 
-            Mathf.Min(valorObjetivoMin + 10*nivel,101)
-            ); // Valor objetivo aleatorio
         
-        planetasActual = Random.Range(
-            Mathf.Min(planetasMin + nivel, 4), 
-            Mathf.Min(planetasMin + nivel, 7)
-            ); // Número de planetas aleatorio
-
-                        
+        // niveles de 2, 3, 4, 5 planetas 
+        planetasActual = planetasMin + nivel;
+        if (planetasActual > 5) planetasActual = 5;
         
-        Debug.Log($"Nuevo nivel creado: Objetivo {valorObjetivoActual}, Planetas {planetasActual}");
         
-        Rect area = new Rect(-1.6f, -3.2f, 6.3f, 6.8f);
+        Rect area = new Rect(-1.4f, -2.8f, 4.5f, 3.4f);
         Vector3 centro = new Vector3(1.55f, 0.2f, 0f);
-        float radio = 3.5f;
+        float radio = 3f;
         float distanciaMinima = 1f;
 
         List<Vector3> posicionesGeneradas = new List<Vector3>();
+        List<int> listaValores = new List<int>();
+        GameObject planetaGenerado = null;
+        int valorPlaneta = 1;
 
+        // Generar una posición aleatoria dentro del área circular
+        // Instanciar el planeta en esa posición
+        // asignarle un valor entre 1 y 10
         for (int i = 0; i < planetasActual; i++)
         {
+            
             Vector3 posicion;
             bool posicionValida = false;
-
             while (!posicionValida)
             {
                 float angulo = Random.Range(0f, Mathf.PI * 2f);
@@ -113,11 +127,70 @@ public class GameManager : MonoBehaviour
                 if (posicionValida)
                 {
                     posicionesGeneradas.Add(posicion);
-                    Instantiate(planetaPrefab, posicion, Quaternion.identity);
+                    planetaGenerado = Instantiate(planetaPrefab, posicion, Quaternion.identity);
+                    valorPlaneta = Random.Range(1, 11);
+                    planetaGenerado.GetComponent<PlanetController>().SetValor(valorPlaneta);
+                    listaValores.Add(valorPlaneta);
+                    
                 }
             }
         }
+
+        // Calcular el valor objetivo en base a los valores de los planetas
+        // para que se pueda alcanzar con las operaciones
+        valorObjetivoActual = listaValores[0];
+        int valorTemporal = valorObjetivoActual;
+        string pista = "";
+        string pistaTemporal = "";
+        pista += valorTemporal.ToString();
         
+        int operacion = 1;
+        bool valido = false;
+        for (int i = 1; i < listaValores.Count; i++)
+        {
+            operacion = Random.Range(1, 5); // 1: suma, 2: resta, 3: multiplicación, 4: división
+            valido = false;
+            switch (operacion)
+            {
+                case 1: // Suma
+                    valorTemporal += listaValores[i];
+                    pistaTemporal = " + " + listaValores[i].ToString();
+                    break;
+                case 2: // Resta
+                    valorTemporal -= listaValores[i];
+                    pistaTemporal = " - " + listaValores[i].ToString();
+                    break;
+                case 3: // Multiplicación
+                    valorTemporal *= listaValores[i];
+                    pistaTemporal = " * " + listaValores[i].ToString();
+                    break;
+                case 4: // División
+                    if (listaValores[i] != 0)
+                    {
+                        valorTemporal /= listaValores[i];
+                        pistaTemporal = " / " + listaValores[i].ToString();
+                    }
+                    break;
+            }
+
+            if (valorTemporal <= 0)
+            {
+                valorTemporal = valorObjetivoActual;
+                i--; // Repetir la iteración actual
+                operacion = Random.Range(1, 5);
+                pistaTemporal = " ";
+            }
+            else
+            {
+                valorObjetivoActual = valorTemporal;
+                valido = true;
+                pista += pistaTemporal;
+                pistaTemporal = " ";
+            }
+        }
+        
+        Debug.Log($"Nuevo nivel creado: Objetivo {valorObjetivoActual}, Planetas {planetasActual}");
+        Debug.Log(pista);
         ActualizarUI();
     }
     
@@ -141,11 +214,22 @@ public class GameManager : MonoBehaviour
 
     public void Win()
     {
+        audioSource.PlayOneShot(audioClipWin);
+        
         nivel++;
         LimpiarPlanetas();
         LimpiarEstelas();
+
+        if (nivel >= 9)
+        {
+            ActualizarUI();
+            CargarEscena("Fin");
+        }
+        
         RecolocarNave();
         CrearNivel();
+        valorActual = 0;
+        ActualizarUI();
     }
 
     public void Lose()
@@ -163,6 +247,7 @@ public class GameManager : MonoBehaviour
     
     public void ReiniciarNivel()
     {
+        audioSource.PlayOneShot(audioClipBoton);
         RecolocarNave();
         valorActual = 0;
         LimpiarEstelas();
@@ -205,6 +290,7 @@ public class GameManager : MonoBehaviour
         txtLevel.text = nivel.ToString();
         txtTarget.text = valorObjetivoActual.ToString();
         txtValue.text = valorActual.ToString();
+        imgProgreso.fillAmount = ((nivel-1) / 8f);
     }
     
 
